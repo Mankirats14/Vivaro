@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.DKrEzeHb.mjs";function t(e,t){return{description:`Vivora is the AI coding tool that writes, reviews, and ships production-ready code — built for developer teams who want speed without sacrificing quality.`,favicon:`assets/images/image-bundle-49.svg`,robots:`max-image-preview:large`,socialImage:`assets/images/image-bundle-50.png`,title:`Vivora -AI Agent for Developers`}}var n=e((()=>{}));export{t as n,n as t};
+//# sourceMappingURL=siteMetadata.BFX_bj6m.mjs.map

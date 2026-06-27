@@ -1,0 +1,70 @@
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_4 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0xa28c20000] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/videos/demo.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2026-06-27T16:34:32.000000Z
+  Duration: 00:00:22.17, start: 0.000000, bitrate: 2648 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 2214x1440, 2501 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+    Metadata:
+      creation_time   : 2026-06-27T16:34:32.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : HEVC
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 140 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-27T16:34:32.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0xa29041180] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0xa29041180] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0xa29041180] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=21.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'public/videos/demo.mp4':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    encoder         : Lavf62.3.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x992, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+      creation_time   : 2026-06-27T16:34:32.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   53 fps=0.0 q=27.0 size=       0KiB time=00:00:01.70 bitrate=   0.2kbits/s speed=3.38x elapsed=0:00:00.50    frame=  152 fps=151 q=27.0 size=     256KiB time=00:00:05.00 bitrate= 419.5kbits/s speed=4.96x elapsed=0:00:01.00    frame=  250 fps=166 q=27.0 size=     512KiB time=00:00:08.36 bitrate= 501.4kbits/s speed=5.54x elapsed=0:00:01.50    frame=  373 fps=185 q=27.0 size=     768KiB time=00:00:12.36 bitrate= 508.8kbits/s speed=6.14x elapsed=0:00:02.01    frame=  481 fps=191 q=27.0 size=     768KiB time=00:00:15.96 bitrate= 394.1kbits/s speed=6.33x elapsed=0:00:02.52    frame=  592 fps=196 q=27.0 size=    1024KiB time=00:00:19.73 bitrate= 425.1kbits/s speed=6.52x elapsed=0:00:03.02    [mp4 @ 0xa28c23700] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0xa29044a80] video:1332KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.650626%
+frame=  665 fps=205 q=-1.0 Lsize=    1340KiB time=00:00:22.10 bitrate= 496.8kbits/s speed=6.82x elapsed=0:00:03.24    
+[libx264 @ 0xa29041180] frame I:3     Avg QP:12.63  size: 64560
+[libx264 @ 0xa29041180] frame P:167   Avg QP:13.83  size:  5090
+[libx264 @ 0xa29041180] frame B:495   Avg QP:19.40  size:   645
+[libx264 @ 0xa29041180] consecutive B-frames:  0.8%  0.0%  0.0% 99.2%
+[libx264 @ 0xa29041180] mb I  I16..4: 26.9% 56.0% 17.2%
+[libx264 @ 0xa29041180] mb P  I16..4:  1.1%  0.9%  0.1%  P16..4: 14.3%  2.8%  1.8%  0.0%  0.0%    skip:79.1%
+[libx264 @ 0xa29041180] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  6.7%  0.0%  0.0%  direct: 0.5%  skip:92.7%  L0:37.4% L1:62.3% BI: 0.3%
+[libx264 @ 0xa29041180] 8x8 transform intra:47.8% inter:92.7%
+[libx264 @ 0xa29041180] coded y,uvDC,uvAC intra: 22.6% 53.1% 31.4% inter: 0.8% 2.5% 0.1%
+[libx264 @ 0xa29041180] i16 v,h,dc,p: 27% 25%  3% 45%
+[libx264 @ 0xa29041180] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 18% 35%  4%  6%  5%  3%  3%  2%
+[libx264 @ 0xa29041180] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 25% 21%  3%  6%  5%  4%  3%  2%
+[libx264 @ 0xa29041180] i8c dc,h,v,p: 56% 21% 17%  6%
+[libx264 @ 0xa29041180] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0xa29041180] ref P L0: 73.1%  2.2% 20.0%  4.7%
+[libx264 @ 0xa29041180] ref B L0: 76.4% 22.7%  1.0%
+[libx264 @ 0xa29041180] ref B L1: 95.4%  4.6%
+[libx264 @ 0xa29041180] kb/s:491.88
