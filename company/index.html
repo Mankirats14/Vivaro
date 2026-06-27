@@ -67,4 +67,4 @@
     <!-- End of bodyEnd -->
 
 
-</body></html>
+<script>(function(){function faqHref(){if(/\/pricing\/index\.html$/.test(location.pathname))return'#faq';if(/\/[^/]+\/index\.html$/.test(location.pathname))return'../pricing/index.html#faq';return'pricing/index.html#faq';}function textNode(a,label){var els=a.querySelectorAll('*');for(var i=els.length-1;i>=0;i--){if((els[i].textContent||'').trim()===label&&els[i].children.length===0)return els[i];}return a;}function updateFaqLink(){var links=document.querySelectorAll('a');for(var i=0;i<links.length;i++){var a=links[i];var t=(a.textContent||'').trim();if(t==='Integrations'||t==='FAQ'){textNode(a,t).textContent='FAQ';a.setAttribute('href',faqHref());}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',updateFaqLink);}else{updateFaqLink();}})();</script></body></html>
